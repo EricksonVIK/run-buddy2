@@ -38,18 +38,18 @@
         </header>
 
         <!--hero/jumbotron-->
-        <section>
-            <div>
-                <h3>Get Started Today</h3>
-                <p>Fill out this form and one of our trainers will scheule a consult</p>
+        <section class="hero">
+            <div class="hero-form">
+                <h3>Get Started Today!</h3>
+                <p>Fill out this form and one of our trainers will scheule a consult.</p>
             <!--Add Form Element-->
             <form>
                 <label for="name">Enter Full Name</label>
-                <input type=""text" placeholder="Your Name" name="name" id="name"/>
+                <input type=""text" placeholder="Your Name" name="name" id="name" class="form-input"/>
                 <label for="email">Enter Email Address</label>
-                <input type="email" placeholder="Email Address" name="email" id="email"/>
+                <input type="email" placeholder="Email Address" name="email" id="email" class="form-input"/>
                 <label for=""phone">Enter Telephone Number</label>
-                <input type="tel" placeholder="phone" id="phone"/>
+                <input type="tel" placeholder="Phone" id="phone" class="form-input"/>
                 <!--Adding a radio button-->
                 <p>
                     Have you worked out with a trainer before?
@@ -61,7 +61,7 @@
                 <!--Adding age button--><!--compare to HTML provided after trying to fix-->
                 <p>
                     <label for="over-18"> 
-                        I acknowledge that I am at least 18 years of age.
+                        I acknowledge that I am at least 18 years of age. <!--by placing the label text inside the <> we make the text clickable, better form mobile-->
                     </label>
                     <input type="checkbox" name="age-confirm" id="over-18"/>
                 </p>
