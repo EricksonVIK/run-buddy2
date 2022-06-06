@@ -1,3 +1,3 @@
 # Run Buddy
 
-## Develop branck README
+## Develop branch README
