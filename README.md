@@ -14,4 +14,5 @@ https://ericksonvik.github.io/run-buddy2/
 ## Contribution
 Made with ❤️ by Erickson
 
-# Run Buddy Inc.
+
+### &copy2019 Run Buddy, Inc
