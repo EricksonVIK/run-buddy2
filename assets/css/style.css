@@ -37,13 +37,22 @@ header nav{
     margin: 7px 0;
 }
 
-header nav ul li{
+header nav ul{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
 }
+/* Removed the li from code see above to place nav ul in row vs column
+li is a child to ul, and ul had everything lumped in column */
+/* header nav ul li{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+} */
 
 header nav ul li a{
     margin: 0 30px;
@@ -60,17 +69,17 @@ footer {
     background: #fce138;
     width: 100%;
     padding: 40px 35px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer h2{
-    display: inline;
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 
 footer div{ 
-    float: right;
     line-height: 1.5;
     text-align: right;
 }
