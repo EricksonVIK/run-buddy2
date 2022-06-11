@@ -481,11 +481,8 @@ step.text{
     .hero-cta{
         text-align: center;
     }
-    .section-title{
+    .section-title, steps h2{
         width: 80%;
-    }
-    .steps h2 {
-        width:80%;
     }
     .trainer {
         flex: 0 70%;
@@ -522,5 +519,22 @@ step.text{
 
 /* media query for mobile phones and smaller (below 575px)*/
 @media screen and (max-width:575px){
-    
+    .hero-form button{
+        width: 100%;
+    }
+    .section-title, .steps h2{
+        width: 95%;
+    }
+    .intro p{
+        width: 100%;
+    }
+    .trainer {
+        flex: 0 100px;
+    }
+    .contact-info{
+        text-align:center;
+    }
+    .contact-form{
+        order: 3;
+    }
 }
