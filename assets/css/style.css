@@ -203,6 +203,7 @@ hero-form h3{
 .steps{
     text-align: center;
     background: #fce138;
+    color: #024e76;
 
 }.step{
     margin:50px auto;
@@ -233,6 +234,15 @@ hero-form h3{
     border-color:#024e76;
     display: inline-block;
 } */
+.steps h2 {
+    font-size: 55px;
+    color:#024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid;
+    border-color:#39a6b2;
+    display: inline-block;
+}
 .step h3{
     color:#024e76;
     font-size:46px;
@@ -450,7 +460,7 @@ step.text{
         justify-content: center;
     }
     header h1{
-        width 100%
+        width: 100%;
         text-align: center;
     }
     header nav ul{
@@ -465,11 +475,49 @@ step.text{
         text-align: center;
         width: 100%;
     }
+    .hero-cta, .hero-form{
+        width: 100%;
+    }
+    .hero-cta{
+        text-align: center;
+    }
+    .section-title{
+        width: 80%;
+    }
+    .steps h2 {
+        width:80%;
+    }
+    .trainer {
+        flex: 0 70%;
+    }
+    .contact-info iframe{
+        flex: 1 100%;
+    }
 }
 
 /* media query for tablets and smaller (between 768px-575px) */
 @media screen and (max-width: 768px){
-    
+    .section-title, steps h2{
+        padding: 30px 15px;
+    }
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .step-info{
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .step-img{
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .step-text {
+        flex: 100%;
+    }
 }
 
 /* media query for mobile phones and smaller (below 575px)*/
