@@ -71,6 +71,7 @@ footer {
     padding: 40px 35px;
     justify-content: space-between;
     flex-wrap: wrap;
+    display: flex;
 }
 
 footer h2{
