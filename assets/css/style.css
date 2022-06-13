@@ -4,16 +4,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
 body {
     /*affects the entire page*/
-    color: #39a6b2;
+    color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 
 /*header style*/
 header{
     padding: 20px 35px; /*spacing around content*/
-    background-color: #39a6b2;
+    background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -31,14 +36,14 @@ header{
 header h1{
     font-weight: bold;
     font-size: 36px;
-    color: #fce138;
+    color: var(--primary-color);
     margin:0;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 header a{
     text-decoration: none;
-    color: #fce138;
+    color: var(--primary-color);
 } 
 /*why did the future links indent?*/
 
@@ -72,8 +77,8 @@ header nav ul li a{
 }
 /* pseudo class with hover for above */
 header nav ul li a:hover{
-    background: #fce138;
-    color: #024e76;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
@@ -83,7 +88,7 @@ header nav ul li a:hover{
 } */
 /* Footer Styling*/
 footer {
-    background: #fce138;
+    background: var(--primary-color);
     width: 100%;
     padding: 40px 35px;
     justify-content: space-between;
@@ -94,7 +99,7 @@ footer {
 was listed as display block per the user agent or default */
 
 footer h2{
-    color: #024e76;
+    color: var(--secondary-color);
     font-size: 30px;
     margin: 0;
 }
@@ -105,7 +110,7 @@ footer div{
 }
 
 footer a{
-    color: #024e76;
+    color: var(--secondary-color);
 }
 
 /* This section rule applied the image to all sections,
@@ -151,26 +156,26 @@ footer a{
 .hero-cta h2{
     font-style:italic;
     font-size:55px;
-    color: #fce138;
+    color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .hero-form {
-    color: #024e76;
+    color: var(--secondary-color);
     background-color: rgba(252,225,56,0.8);
     padding: 20px;
     /* long had for border properties
     border-style: solid;
     border-width: 3px;
-    border-color:#024e76;*/
-    border: solid 3px #024e76;
+    border-color:var(--secondary-color);*/
+    border: solid 3px var(--secondary-color);
     border-radius: 15px;
     width:40%;
     margin:3.5%;
     box-shadow: 0,0,10px rgba(0,0,0,0.5);
 }
 .hero-form button:hover{
-    background-color: #39a6b2;
+    background-color: var(--tertiary-color);
 }
 /* may need to add in a margin at hero.cta to get the spacing to work */
 .hero-form p{
@@ -183,11 +188,11 @@ hero-form h3{
 }
 
 .form-input {
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color:#024e76;
+    color:var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
@@ -199,8 +204,8 @@ hero-form h3{
 }
 
 .hero-form button {
-    color:#fce138;
-    background-color: #024e76;
+    color:var(--primary-color);
+    background-color: var(--secondary-color);
     border:none;
     padding:10px 20px;
     font-size:16px;
@@ -223,7 +228,7 @@ hero-form h3{
     height: 20px;
     width: 20px;
     background: rgba(255,255,255,0.75);
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     position: absolute;
     top: -4px;
     left: -30px;
@@ -238,19 +243,19 @@ hero-form h3{
     width:20px;
     height: 20px;
     border-radius: 50%;
-    background: #024e76;
+    background: var(--secondary-color);
     position: absolute;
     left: -29px;
     top: -3px;
-    background-image: radial-gradient(circle,#39a6b2,#024e76);
+    background-image: radial-gradient(circle,var(--tertiary-color),var(--secondary-color));
 }
 
 .checkbox-wrapper label::after {
     content: "";
     height: 6px;
     width: 14px;
-    border-left:2px solid #024e76;
-    border-bottom: 2px solid #024e76;
+    border-left:2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
     position: absolute;
     left: -26px;
     top: 1px;
@@ -282,17 +287,17 @@ hero-form h3{
 
 .intro h2 {
     font-size: 55px;
-    color:#024e76;
+    color:var(--secondary-color);
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
-    border-color:#fce138;
+    border-color:var(--primary-color);
     display: inline-block;
 }
 
 .intro p{
     line-height: 1.3;
-    color:#39a6b2;
+    color:var(--tertiary-color);
     width: 80%;
     font-size: 20px;
     margin:0 auto;
@@ -302,14 +307,14 @@ hero-form h3{
 
 .steps{
     text-align: center;
-    background: #fce138;
-    color: #024e76;
+    background: var(--primary-color);
+    color: var(--secondary-color);
 
 }.step{
     margin:50px auto;
     padding-bottom: 50px;
     width:80%;
-    border-bottom: 1px solid #39a6b2;
+    border-bottom: 1px solid var(--tertiary-color);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -319,11 +324,11 @@ hero-form h3{
     border-bottom: none;
 }
 /* .step:nth-child(even){
-    border-bottom: 1px solid #39a6b2;
+    border-bottom: 1px solid var(--tertiary-color);
 } Could also be :last-child or class:not(:lastchild)*/
 
 /* .step:not(:last-child){
-    border-bottom: 1px, solid,#39a6b2;
+    border-bottom: 1px, solid,var(--tertiary-color);
 } */
 
 /* .steps div{
@@ -337,24 +342,24 @@ hero-form h3{
 
 /* .steps h2{
     font-size: 55px;
-    color:#024e76;
+    color:var(--secondary-color);
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
-    border-color:#024e76;
+    border-color:var(--secondary-color);
     display: inline-block;
 } */
 .steps h2 {
     font-size: 55px;
-    color:#024e76;
+    color:var(--secondary-color);
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
-    border-color:#39a6b2;
+    border-color:var(--tertiary-color);
     display: inline-block;
 }
 .step h3{
-    color:#024e76;
+    color:var(--secondary-color);
     font-size:46px;
     flex:1 30%;
     /* margin-top:10px; */
@@ -380,14 +385,14 @@ step.text{
     flex: 12;
 }
 .step-text p{
-    color: #39a6b2;
+    color: var(--tertiary-color);
     font-size: 18px;
 }
 
 .step-text h4 {
     font-size: 26px;
     line-height: 1.5;
-    color:#024e76;
+    color:var(--secondary-color);
 }
 
 /* .steps span{
@@ -396,7 +401,7 @@ step.text{
 
 .steps-title{
     font-size:55px;
-    color:#024e76;
+    color:var(--secondary-color);
     margin-bottom:25px;
     padding: 0 100px 20px 100px;
     display:inline-block;
@@ -404,11 +409,11 @@ step.text{
 }
 
 .primary-border{
-    border-color:#fce138;
+    border-color:var(--primary-color);
 }
 
 .secondary-border{
-    border-color:#39a6b2;
+    border-color:var(--tertiary-color);
 }
 
 .trainers {
@@ -422,8 +427,8 @@ step.text{
 .trainer{
     /* width:900px; */
     margin:20px;
-    background:#024e76;
-    color:#fce138;
+    background:var(--secondary-color);
+    color:var(--primary-color);
     flex: 1;
     /* overflow:auto; */
 }
@@ -451,7 +456,7 @@ step.text{
 .trainer-bio h3{
     font-size:28px;
     /* margin-bottom:8px; */
-    color:#fce138;
+    color:var(--primary-color);
 }
 
 .trainer-bio h4{
@@ -463,7 +468,7 @@ step.text{
 /* .trainer-bio p{
     font-size:17px;
     font-weight:lighter;
-    color:#fce138;
+    color:var(--primary-color);
     /* line-height:1.3; */
     /* float:left;
 } */ */
@@ -471,12 +476,12 @@ step.text{
 .trainer-bio p1{
     font-size:17px;
     font-weight:lighter;
-    color:#fce138;
+    color:var(--primary-color);
     line-height:1.3;
 }
 /* Start Reach out style */
 .contact{
-    background-color: #024e76;
+    background-color: var(--secondary-color);
     /* text-align:center; */
 }
 
@@ -486,8 +491,8 @@ step.text{
     /* padding:0 100px 20px 100px; */
     border-bottom:3px solid;
     /* margin-bottom:35px; */
-    color:#fce138;
-    border-color:#39a6b2;
+    color:var(--primary-color);
+    border-color:var(--tertiary-color);
     padding-bottom:20px;
     text-align:center;
     margin: 0 auto 35px auto;
@@ -522,7 +527,7 @@ step.text{
 
 .contact-info h3{
     font-size: 32px;
-    color:#fce138;
+    color:var(--primary-color);
 }
 
 .contact-info p, .contact-info address{
@@ -533,15 +538,15 @@ step.text{
 }
 
 .contact-info a {
-    color:#fce138;
+    color:var(--primary-color);
 }
 
 .contact-form input, .contact-form textarea {
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -556,16 +561,16 @@ step.text{
 .contact-form button{
     width: 100%;
     border: none;
-    background: #fce138;
-    color: #024e76;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
     border-radius: 10px;
 }
 .contact-form button:hover{
-    color: #fce138;
-    background: #39a6b2;
+    color: var(--primary-color);
+    background: var(--tertiary-color);
 }
 .flex-row{
     display:flex;
